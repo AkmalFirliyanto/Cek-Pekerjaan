@@ -74,7 +74,7 @@ const pekerjaan = [
     "Si Penjual Mie Ujung Pandang", 
     "Si Teller Bank",
     "Si Penjaga Panti Asuhan"
-]
+];
 
 
 app.post('/get-pekerjaan', (req, res) => {
