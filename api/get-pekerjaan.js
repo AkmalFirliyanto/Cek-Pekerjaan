@@ -25,7 +25,7 @@ app.post('/get-pekerjaan', (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(3000, () => console.log('Server running'));
 
 function hashCode(name) {
     let hash = 0;

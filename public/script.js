@@ -3,7 +3,7 @@ document.getElementById('pekerjaanForm').addEventListener('submit', async functi
     let name = document.getElementById("name").value;
 
     try {
-        let response = await fetch('http://localhost:3000/get-pekerjaan', {
+        let response = await fetch('/api/get-pekerjaan', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name: name })
