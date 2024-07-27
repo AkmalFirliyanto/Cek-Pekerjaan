@@ -7,7 +7,7 @@ app.use(cors()); // Aktifkan CORS
 
 app.use(bodyParser.json());
 
-const pekerjaanFile = [
+const pekerjaan = [
     "Si Tukang Kopi",
     "Si Driver Taksi",
     "Si Pedagang Es",
@@ -76,8 +76,6 @@ const pekerjaanFile = [
     "Si Penjaga Panti Asuhan"
 ]
 
-
-let pekerjaan = JSON.parse(fs.readFileSync(pekerjaanFile, 'utf8'));
 
 app.post('/get-pekerjaan', (req, res) => {
     console.log('Received request:', req.body);
