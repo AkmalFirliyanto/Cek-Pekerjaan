@@ -8,7 +8,7 @@
 /* Styling for the whole page */
 body {
     font-family: Arial, sans-serif;
-    background-image: url(../assets/bg.svg);
+    background-image: url(assets/bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
