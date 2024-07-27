@@ -77,7 +77,7 @@ const pekerjaan = [
 ];
 
 
-app.post('/get-pekerjaan', (req, res) => {
+app.post('api/get-pekerjaan', (req, res) => {
     console.log('Received request:', req.body);
     const { name } = req.body;
     let hash = hashCode(name);
@@ -102,3 +102,5 @@ function hashCode(name) {
     }
     return Math.abs(hash);
 }
+
+module.exports = app;
