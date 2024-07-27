@@ -7,7 +7,7 @@ app.use(cors()); // Aktifkan CORS
 
 app.use(bodyParser.json());
 
-const pekerjaanFile = 'pekerjaan.json';
+const pekerjaanFile = 'api/pekerjaan.json';
 
 let pekerjaan = JSON.parse(fs.readFileSync(pekerjaanFile, 'utf8'));
 
